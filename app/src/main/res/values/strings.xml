@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">EmployeeDirectory</string>
+    <string name="full_time">Full Time</string>
+    <string name="part_time">Part Time</string>
+    <string name="contractor">Contractor</string>
+    <string name="item_poster">Item poster</string>
+    <string name="try_again">Try Again</string>
+</resources>
