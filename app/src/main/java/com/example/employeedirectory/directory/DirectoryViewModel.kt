@@ -15,8 +15,8 @@ import kotlinx.coroutines.launch
 @HiltViewModel
 class DirectoryViewModel @Inject constructor(
     private val repository: AmazonawsRepository
-) :
-    ViewModel() {
+) : ViewModel() {
+
     private var _directory = MutableStateFlow<List<Employee>>(emptyList())
     val directory: StateFlow<List<Employee>> = _directory
 

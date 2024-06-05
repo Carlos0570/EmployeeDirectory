@@ -1,5 +1,7 @@
 package com.example.employeedirectory.core.data
 
+import androidx.room.Entity
+import androidx.room.PrimaryKey
 import com.google.gson.annotations.SerializedName
 
 data class DirectoryResponse(
@@ -7,7 +9,9 @@ data class DirectoryResponse(
     var employees: ArrayList<Employee> = arrayListOf()
 )
 
+@Entity
 data class Employee(
+    @PrimaryKey
     @SerializedName("uuid")
     var uuid: String,
 

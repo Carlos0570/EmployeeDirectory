@@ -79,6 +79,12 @@ dependencies {
     androidTestImplementation(libs.androidx.espresso.core)
     androidTestImplementation(platform(libs.androidx.compose.bom))
 
+    val room_version = "2.6.1"
+
+    implementation("androidx.room:room-runtime:$room_version")
+    kapt("androidx.room:room-compiler:$room_version")
+    implementation("androidx.room:room-ktx:$room_version")
+
     testImplementation("org.mockito:mockito-core:3.11.2")
     testImplementation ("org.mockito:mockito-inline:3.11.2")
     testImplementation ("io.mockk:mockk:1.12.0" )// or latest version
